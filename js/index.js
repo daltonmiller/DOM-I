@@ -50,6 +50,26 @@ navItems[3].textContent = 'features'
 navItems[4].textContent = 'about'
 navItems[5].textContent = 'contact'
 
+const navText = document.querySelectorAll('a');
+navText[0].style.color = 'green';
+navText[1].style.color = 'green';
+navText[2].style.color = 'green';
+navText[3].style.color = 'green';
+navText[4].style.color = 'green';
+navText[5].style.color = 'green';
+
+const nav = document.querySelector('nav'); 
+const newNav = document.createElement('a')
+console.log(newNav)
+newNav.textContent = 'boopity'
+//newNav.href = '#'
+nav.appendChild(newNav)
+const newNav2 = document.createElement('a')
+newNav2.textContent = 'boppity'
+nav.appendChild(newNav2)
+
+
+
 const domAwesomeness = document.querySelector('h1')
 //console.log(domAwesomeness)
 domAwesomeness.innerHTML = 'dom <br> is <br> awesome'
@@ -132,3 +152,5 @@ email.innerHTML = `sales@greatidea.io`
 
 const footer = document.querySelector('footer p')
 footer.innerHTML = `Copyright Great Idea! 2018`
+
+navItems.color = 'red'
